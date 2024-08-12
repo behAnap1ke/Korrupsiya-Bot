@@ -7,9 +7,139 @@
     <title>Korrupsiyaga qarshi portal</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        /* Reset default styles */
+        body, h1, h2, h3, h4, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header .logo img {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #333 url('https://img.freepik.com/free-vector/illustration-user-avatar-icon_53876-5907.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723334400&semt=ais_hybrid') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 60px; /* Adjust based on header height */
+        }
+
+        .hero .btn {
+            background: #e8491d;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .featured-section, .news-section, .database-section, .resources-section, .about-section, .contact-section {
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .featured-content, .news-grid, .database-grid, .resources-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .featured-item, .news-item, .database-item, .resource-item {
+            flex: 1 1 100%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .featured-item img, .news-item img, .database-item img, .resource-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #e8491d;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .featured-item, .news-item, .database-item, .resource-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .featured-item, .news-item, .database-item, .resource-item {
+                flex: 1 1 calc(33.333% - 20px);
+            }
+        }
     </style>
 </head>
 
@@ -44,22 +174,20 @@
 <section id="featured" class="featured-section">
     <h2>So'nggi yutuqlar</h2>
     <div data-aos="zoom-in-right" class="featured-content">
-        <div class="featured-item">
+        <div class="featured-item" data-aos="fade-up" data-aos-duration="1000">
             <img src="https://minenergy.uz/img/gerb.png" alt="Korrupsiya">
             <h3>Davlat sektorida sxemani ochish</h3>
             <p>Bizning so'nggi tergovimiz yuqori lavozimli amaldorlarning hibsga olinishi bilan yakunlandi...</p>
             <a href="#" class="btn">Batafsil o'qing</a>
         </div>
-        <div data-aos="zoom-in-right" class="featured-item">
-            <img src="https://www.uzbekistonmet.uz/uploads/df30051a-2103-5f52-0e0f-64bf5a374a2d_lists_.jpg"
-                 alt="Yangiliklar">
+        <div class="featured-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <img src="https://www.uzbekistonmet.uz/uploads/df30051a-2103-5f52-0e0f-64bf5a374a2d_lists_.jpg" alt="Yangiliklar">
             <h3>Korrupsiyaga qarshi yangi tashabbuslar</h3>
             <p>Biz javobgarlikni kuchaytirishga qaratilgan yangi qonun loyihalarini taklif etdik...</p>
             <a href="#" class="btn">Batafsil</a>
         </div>
-        <div data-aos="zoom-in-right" class="featured-item">
-            <img src="https://yuz.uz/imageproxy/1200x/https://yuz.uz/file/news/7b0d704883f5775f48c85c195fa996f7.jpg"
-                 alt="Yangiliklar">
+        <div class="featured-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <img src="https://yuz.uz/imageproxy/1200x/https://yuz.uz/file/news/7b0d704883f5775f48c85c195fa996f7.jpg" alt="Yangiliklar">
             <h3>Xalqaro hamkorlik</h3>
             <p>Biz tajriba va resurslar almashish uchun xalqaro tashkilotlar bilan hamkorlik qilmoqdamiz...</p>
             <a href="#" class="btn">Ko'proq ma'lumot</a>
@@ -72,15 +200,13 @@
     <h2>Yangiliklar</h2>
     <div data-aos="zoom-in-right" class="news-grid">
         <article class="news-item">
-            <img src="https://img.freepik.com/premium-vector/badge-news-logo-modern-flat-pictogram-business-marketing-internet-concept-symbol-for-website-design-or-buttons-for-mobile-app-news-vector-icon-globe-symbol-of-the-world_340607-38.jpg?size=626&ext=jpg"
-                 alt="Yangilik 1">
+            <img src="https://img.freepik.com/premium-vector/badge-news-logo-modern-flat-pictogram-business-marketing-internet-concept-symbol-for-website-design-or-buttons-for-mobile-app-news-vector-icon-globe-symbol-of-the-world_340607-38.jpg?size=626&ext=jpg" alt="Yangilik 1">
             <h3>Yangilik sarlavhasi</h3>
             <p>Yangilik va tergov tafsilotlari...</p>
             <a href="#" class="btn">Batafsil o'qing</a>
         </article>
         <article class="news-item">
-            <img src="https://w7.pngwing.com/pngs/997/170/png-transparent-red-and-white-earth-illustration-globe-logo-breaking-news-trade-miscellaneous-world-news-thumbnail.png"
-                 alt="Yangilik 2">
+            <img src="https://w7.pngwing.com/pngs/997/170/png-transparent-red-and-white-earth-illustration-globe-logo-breaking-news-trade-miscellaneous-world-news-thumbnail.png" alt="Yangilik 2">
             <h3>Korrupsiyaga qarshi yangi choralar</h3>
             <p>Hukumatning yangi tashabbuslari haqida batafsil...</p>
             <a href="#" class="btn">Batafsil</a>
@@ -126,10 +252,8 @@
 <!-- About Section -->
 <section id="about" class="about-section">
     <h2>Biz haqimizda</h2>
-    <p>Biz mustaqil tashkilotmiz, hayotning barcha jabhalarida korrupsiyani yo'q qilishga intilamiz. Biz fuqarolar
-        huquqlarini himoya qilish va adolatni ta'minlash ustida ishlaymiz.</p>
-    <p>Bizning jamoamiz huquq sohasi ekspertlari, tergovchi jurnalistlar va faollardan iborat. Biz xalqaro tashkilotlar
-        bilan faol hamkorlik qilamiz va ishimizda eng yaxshi amaliyotlarni joriy qilamiz.</p>
+    <p>Biz mustaqil tashkilotmiz, hayotning barcha jabhalarida korrupsiyani yo'q qilishga intilamiz. Biz fuqarolar huquqlarini himoya qilish va adolatni ta'minlash ustida ishlaymiz.</p>
+    <p>Bizning jamoamiz huquq sohasi ekspertlari, tergovchi jurnalistlar va faollardan iborat. Biz xalqaro tashkilotlar bilan faol hamkorlik qilmoqdamiz va ishimizda eng yaxshi amaliyotlarni joriy qilamiz.</p>
     <div data-aos="zoom-in-right" class="about-team">
         <h3>Bizning jamoa</h3>
         <div class="team-member">
@@ -138,7 +262,7 @@
             <p>Lavozim: Aholining korrupsiyaga bo'lgan munosabati, Siyosiy korrupsiya</p>
         </div>
         <div class="team-member">
-            <img src="https://cdn-icons-png.flaticon.com/512ls/1255/1255974.png" alt="Jamoa 2">
+            <img src="https://cdn-icons-png.flaticon.com/512/1255/1255974.png" alt="Jamoa 2">
             <h4>Ibodullox Ibadulaev</h4>
             <p>Lavozim: Pul to'lovlari, Epizodik korrupsiya</p>
         </div>
@@ -148,21 +272,21 @@
 <!-- Footer -->
 <footer id="contact" class="contact-section">
     <h2>Kontaktlar</h2>
-    <p>Agar sizda korrupsiya haqida ma'lumot bo'lsa yoki loyihamizni qo'llab-quvvatlamoqchi bo'lsangiz, biz bilan
-        bog'laning:</p>
-    <p>Email: tasmatovbehruz72@gmail.com</p>
-    <p>Telefon: +998974917080</p>
+    <p>Agar sizda korrupsiya haqida ma'lumot bo'lsa yoki loyihamizni qo'llab-quvvatlamoqchi bo'lsangiz, biz bilan bog'laning:</p>
+    <p>Email: <a href="mailto:tasmatovbehruz72@gmail.com">tasmatovbehruz72@gmail.com</a></p>
+    <p>Telefon: <a href="tel:+998974917080">+998974917080</a></p>
     <p>Manzil: Toshkent, Mehirjon ko'chasi, 123-uy</p>
-    <p>Telegram bot: <a href="https://t.me/korruptsiya12345_bot" target="_blank">https://t.me/korruptsiya12345_bot</a>
-    </p>
+    <p>Telegram bot: <a href="https://t.me/korruptsiya12345_bot" target="_blank">https://t.me/korruptsiya12345_bot</a></p>
 </footer>
 
 <script src="js/script.js"></script>
-</body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 
+</body>
+
 </html>
+
 
