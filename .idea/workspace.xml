@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2313b27d-ebe1-4ea4-8582-85d060589653" name="Changes" comment="edit again bot.py" />
+    <list default="true" id="2313b27d-ebe1-4ea4-8582-85d060589653" name="Changes" comment="edit again bot.py">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +101,7 @@
       <workItem from="1723276651648" duration="530000" />
       <workItem from="1723277855182" duration="126000" />
       <workItem from="1723455307040" duration="132000" />
-      <workItem from="1723466126393" duration="1812000" />
+      <workItem from="1723466126393" duration="2113000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <option name="closed" value="true" />
