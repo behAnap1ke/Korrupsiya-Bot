@@ -20,7 +20,7 @@ menu_button = ReplyKeyboardMarkup(
             KeyboardButton(text='📜 R.uz qonunlari')
         ],
         [
-            KeyboardButton('Web sahifani ochish',
+            KeyboardButton('📝Web sahifani ochish',
                            web_app=WebAppInfo(url=WEB_APP_URL))
         ]
     ],
