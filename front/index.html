@@ -56,7 +56,7 @@
         }
 
         .hero {
-            background: #333 url('https://img.freepik.com/free-vector/illustration-user-avatar-icon_53876-5907.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723334400&semt=ais_hybrid') no-repeat center center/cover;
+            background: #333 url('https://images.unsplash.com/photo-1532598605096-5d2a27e62172?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMTI4Nzg0NjU&ixlib=rb-1.2.1&q=80&w=1200') no-repeat center center/cover;
             color: #fff;
             text-align: center;
             padding: 100px 20px;
@@ -72,9 +72,10 @@
             font-weight: bold;
         }
 
-        .featured-section, .news-section, .database-section, .resources-section, .about-section, .contact-section {
+        .section {
             padding: 20px;
             margin: 20px auto;
+            max-width: 1200px;
         }
 
         .featured-content, .news-grid, .database-grid, .resources-grid {
@@ -83,7 +84,7 @@
             gap: 20px;
         }
 
-        .featured-item, .news-item, .database-item, .resource-item {
+        .featured-item, .news-item, .database-item, .resource-item, .blog-post, .event-item {
             flex: 1 1 100%;
             background: #fff;
             padding: 15px;
@@ -92,7 +93,7 @@
             transition: transform 0.3s ease;
         }
 
-        .featured-item img, .news-item img, .database-item img, .resource-item img {
+        .featured-item img, .news-item img, .database-item img, .resource-item img, .blog-post img, .event-item img {
             max-width: 100%;
             height: auto;
             display: block;
@@ -130,15 +131,64 @@
 
         /* Responsive Design */
         @media (min-width: 768px) {
-            .featured-item, .news-item, .database-item, .resource-item {
+            .featured-item, .news-item, .database-item, .resource-item, .blog-post, .event-item {
                 flex: 1 1 calc(50% - 20px);
             }
         }
 
         @media (min-width: 992px) {
-            .featured-item, .news-item, .database-item, .resource-item {
+            .featured-item, .news-item, .database-item, .resource-item, .blog-post, .event-item {
                 flex: 1 1 calc(33.333% - 20px);
             }
+        }
+
+        /* Centered Contact Section */
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-section ul li {
+            margin: 10px 0;
+        }
+
+        .contact-section form {
+            display: inline-block;
+            text-align: left;
+            max-width: 600px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .contact-section form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contact-section form input, .contact-section form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-section form button {
+            background: #e8491d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-section form button:hover {
+            background: #d7361b;
         }
     </style>
 </head>
@@ -171,115 +221,134 @@
 </section>
 
 <!-- Featured Section -->
-<section id="featured" class="featured-section">
+<section id="featured" class="section featured-section">
     <h2>So'nggi yutuqlar</h2>
-    <div data-aos="zoom-in-right" class="featured-content">
+    <div class="featured-content">
         <div class="featured-item" data-aos="fade-up" data-aos-duration="1000">
-            <img src="https://minenergy.uz/img/gerb.png" alt="Korrupsiya">
+            <img src="https://uzpharmagency.uz/uploads/news/aab533f670b714fb17ee93f16be436ee.jpg" alt="Yutuq 1">
             <h3>Davlat sektorida sxemani ochish</h3>
             <p>Bizning so'nggi tergovimiz yuqori lavozimli amaldorlarning hibsga olinishi bilan yakunlandi...</p>
-            <a href="#" class="btn">Batafsil o'qing</a>
+            <a href="https://www.bbc.com/uzbekistan-corruption" class="btn">Batafsil o'qing</a>
         </div>
         <div class="featured-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <img src="https://www.uzbekistonmet.uz/uploads/df30051a-2103-5f52-0e0f-64bf5a374a2d_lists_.jpg" alt="Yangiliklar">
+            <img src="https://parliament.gov.uz/media/deputy/articles/photo_2023-12-19_19-07-24.jpg" alt="Yutuq 2">
             <h3>Korrupsiyaga qarshi yangi tashabbuslar</h3>
             <p>Biz javobgarlikni kuchaytirishga qaratilgan yangi qonun loyihalarini taklif etdik...</p>
-            <a href="#" class="btn">Batafsil</a>
+            <a href="https://www.transparency.org/en/countries/uzbekistan" class="btn">Batafsil</a>
         </div>
         <div class="featured-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <img src="https://yuz.uz/imageproxy/1200x/https://yuz.uz/file/news/7b0d704883f5775f48c85c195fa996f7.jpg" alt="Yangiliklar">
+            <img src="https://storage.kun.uz/source/1/aA4g24U0v5fjv9NlkwpfpXvxZFgTavGv.jpg" alt="Yutuq 3">
             <h3>Xalqaro hamkorlik</h3>
             <p>Biz tajriba va resurslar almashish uchun xalqaro tashkilotlar bilan hamkorlik qilmoqdamiz...</p>
-            <a href="#" class="btn">Ko'proq ma'lumot</a>
+            <a href="https://www.anticorruption.gov.uz" class="btn">Ko'proq ma'lumot</a>
         </div>
     </div>
 </section>
 
 <!-- News Section -->
-<section id="news">
+<section id="news" class="section news-section">
     <h2>Yangiliklar</h2>
-    <div data-aos="zoom-in-right" class="news-grid">
+    <div class="news-grid">
         <article class="news-item">
-            <img src="https://img.freepik.com/premium-vector/badge-news-logo-modern-flat-pictogram-business-marketing-internet-concept-symbol-for-website-design-or-buttons-for-mobile-app-news-vector-icon-globe-symbol-of-the-world_340607-38.jpg?size=626&ext=jpg" alt="Yangilik 1">
+            <img src="https://cdn.trt.net.tr/images/xlarge/rectangle/9537/d3a9/ae3a/59eee1423662e.jpg?time=1716103506" alt="Yangilik 1">
             <h3>Yangilik sarlavhasi</h3>
             <p>Yangilik va tergov tafsilotlari...</p>
-            <a href="#" class="btn">Batafsil o'qing</a>
+            <a href="https://www.bbc.com/uzbekistan-corruption" class="btn">Batafsil o'qing</a>
         </article>
         <article class="news-item">
-            <img src="https://w7.pngwing.com/pngs/997/170/png-transparent-red-and-white-earth-illustration-globe-logo-breaking-news-trade-miscellaneous-world-news-thumbnail.png" alt="Yangilik 2">
+            <img src="https://cdn.beta.qalampir.uz/uploads/5p/f_wSGdj1MwbF14oXunSZW7OfTVg6uCCq.jpg" alt="Yangilik 2">
             <h3>Korrupsiyaga qarshi yangi choralar</h3>
             <p>Hukumatning yangi tashabbuslari haqida batafsil...</p>
-            <a href="#" class="btn">Batafsil</a>
+            <a href="https://www.transparency.org/en/countries/uzbekistan" class="btn">Batafsil</a>
         </article>
     </div>
 </section>
 
 <!-- Database Section -->
-<section id="database" class="database-section">
+<section id="database" class="section database-section">
     <h2>Korrupsiya bazasi</h2>
     <p>Bizning resursimiz korrupsiya holatlari va tegishli tergovlar haqida batafsil ma'lumot beradi.</p>
-    <div data-aos="zoom-in-right" class="database-grid">
+    <div class="database-grid">
         <div class="database-item">
             <h3>Sog'liqni saqlash</h3>
             <p>Tibbiy jihozlar davlat xaridlari sohasidagi yirik tergov...</p>
-            <a href="#" class="btn">Tafsilotlar</a>
+            <a href="https://www.anticorruption.gov.uz/health" class="btn">Tafsilotlar</a>
         </div>
         <div class="database-item">
             <h3>Qurilish</h3>
             <p>Qurilish shartnomalarini taqsimlashda qonunbuzarliklarni tergov qilish...</p>
-            <a href="#" class="btn">Batafsil o'qing</a>
+            <a href="https://www.anticorruption.gov.uz/construction" class="btn">Batafsil o'qing</a>
         </div>
     </div>
 </section>
 
 <!-- Resources Section -->
-<section id="resources" class="resources-section">
+<section id="resources" class="section resources-section">
     <h2>Foydali resurslar</h2>
-    <div data-aos="zoom-in-right" class="resources-grid">
+    <div class="resources-grid">
         <div class="resource-item">
             <h3>Korrupsiya haqida qanday xabar berish mumkin?</h3>
             <p>Anonim qolgan holda korrupsiya holatlari haqida qanday xabar berish mumkinligini bilib oling...</p>
-            <a href="#" class="btn">Batafsil</a>
+            <a href="https://www.anticorruption.gov.uz/report" class="btn">Batafsil</a>
         </div>
         <div class="resource-item">
             <h3>Korrupsiyaga qarshi qonunlar</h3>
             <p>Qonunchilikdagi so'nggi o'zgarishlar bilan tanishing...</p>
-            <a href="#" class="btn">Batafsil o'qing</a>
+            <a href="https://www.anticorruption.gov.uz/laws" class="btn">Batafsil o'qing</a>
         </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="about-section">
+<section id="about" class="section about-section">
     <h2>Biz haqimizda</h2>
     <p>Biz mustaqil tashkilotmiz, hayotning barcha jabhalarida korrupsiyani yo'q qilishga intilamiz. Biz fuqarolar huquqlarini himoya qilish va adolatni ta'minlash ustida ishlaymiz.</p>
     <p>Bizning jamoamiz huquq sohasi ekspertlari, tergovchi jurnalistlar va faollardan iborat. Biz xalqaro tashkilotlar bilan faol hamkorlik qilmoqdamiz va ishimizda eng yaxshi amaliyotlarni joriy qilamiz.</p>
-    <div data-aos="zoom-in-right" class="about-team">
+    <div class="about-team">
         <h3>Bizning jamoa</h3>
         <div class="team-member">
-            <img src="https://cdn-icons-png.flaticon.com/512/3048/3048122.png" alt="Jamoa 1">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Behruz Tashmatov">
             <h4>Behruz Tashmatov</h4>
             <p>Lavozim: Aholining korrupsiyaga bo'lgan munosabati, Siyosiy korrupsiya</p>
         </div>
         <div class="team-member">
-            <img src="https://cdn-icons-png.flaticon.com/512/1255/1255974.png" alt="Jamoa 2">
+            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Ibodullox Ibadulaev">
             <h4>Ibodullox Ibadulaev</h4>
             <p>Lavozim: Pul to'lovlari, Epizodik korrupsiya</p>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
-<footer id="contact" class="contact-section">
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
     <h2>Kontaktlar</h2>
-    <p>Agar sizda korrupsiya haqida ma'lumot bo'lsa yoki loyihamizni qo'llab-quvvatlamoqchi bo'lsangiz, biz bilan bog'laning:</p>
+    <p>Biz bilan bog'laning:</p>
     <p>Email: <a href="mailto:tasmatovbehruz72@gmail.com">tasmatovbehruz72@gmail.com</a></p>
-    <p>Telefon: <a href="tel:+998974917080">+998974917080</a></p>
-    <p>Manzil: Toshkent, Mehirjon ko'chasi, 123-uy</p>
-    <p>Telegram bot: <a href="https://t.me/korruptsiya12345_bot" target="_blank">https://t.me/korruptsiya12345_bot</a></p>
+    <p>Telegram Bot: <a href="https://t.me/korruptsiya12345_bot" target="_blank">https://t.me/korruptsiya12345_bot</a></p>
+    <p>Telefon: +998 71 123 45 67</p>
+    <p>Manzil: Toshkent, Mustaqillik ko'chasi, 12</p>
+    <form action="#" method="post">
+        <label for="name">Ismingiz:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email manzilingiz:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Xabaringiz:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Yuborish</button>
+    </form>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Korrupsiyaga qarshi portal. Barcha huquqlar himoyalangan. <a href="#">Maxfiylik siyosati</a></p>
 </footer>
 
-<script src="js/main.js"></script>
+<!-- AOS (Animate On Scroll) -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
