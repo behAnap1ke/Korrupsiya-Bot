@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2313b27d-ebe1-4ea4-8582-85d060589653" name="Changes" comment="edit again bot.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keyboards/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/Keyboards/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2313b27d-ebe1-4ea4-8582-85d060589653" name="Changes" comment="edit again bot.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +109,7 @@
       <workItem from="1723639480165" duration="5000" />
       <workItem from="1723644066835" duration="251000" />
       <workItem from="1723644339059" duration="13000" />
-      <workItem from="1723712253191" duration="1458000" />
+      <workItem from="1723712253191" duration="2282000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <option name="closed" value="true" />

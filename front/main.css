@@ -663,3 +663,8 @@ footer a:hover {
     display: block;
     opacity: 0;
 }
+
+.featured-item img, .news-item img, .database-item img, .resource-item img, .blog-post img, .event-item img {
+    display: block;
+    margin: 0 auto;
+}
