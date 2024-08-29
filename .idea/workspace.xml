@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2313b27d-ebe1-4ea4-8582-85d060589653" name="Changes" comment="edit again bot.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corruption.db" beforeDir="false" afterPath="$PROJECT_DIR$/corruption.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corruption.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/1234&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/1234/corruption.db&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -124,7 +124,13 @@
       <workItem from="1723834218746" duration="106000" />
       <workItem from="1723835293720" duration="38000" />
       <workItem from="1723835586332" duration="11000" />
-      <workItem from="1723836787509" duration="429000" />
+      <workItem from="1723836787509" duration="706000" />
+      <workItem from="1723921793407" duration="86000" />
+      <workItem from="1724057947628" duration="693000" />
+      <workItem from="1724070834403" duration="70000" />
+      <workItem from="1724072104147" duration="49000" />
+      <workItem from="1724072906585" duration="960000" />
+      <workItem from="1724216797230" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <option name="closed" value="true" />
@@ -165,6 +171,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="edit again bot.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/1234$bot.coverage" NAME="bot Coverage Results" MODIFIED="1723832771847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1234$bot.coverage" NAME="bot Coverage Results" MODIFIED="1724073702667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
